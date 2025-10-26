@@ -1,0 +1,22 @@
+{
+  "name": "color-theme",
+  "displayName": "Color Theme",
+  "description": "A VS Code extension that changes editor colors randomly",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:my-color-theme.changeColors"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "my-color-theme.changeColors",
+        "title": "Change Editor Colors"
+      }
+    ]
+  }
+}
